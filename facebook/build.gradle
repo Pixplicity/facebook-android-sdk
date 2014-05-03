@@ -1,13 +1,13 @@
 apply plugin: 'android-library'
 
 dependencies {
-    compile 'com.android.support:support-v4:13.0.+'
-    compile files('libs/bolts.jar')
+    compile 'com.android.support:support-v4:19.1.0'
+    compile files('../libs/bolts.jar')
 }
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19"
+    buildToolsVersion "19.0.3"
 
     defaultConfig {
         minSdkVersion 8
@@ -26,3 +26,5 @@ android {
         }
     }
 }
+
+apply from: 'https://raw.githubusercontent.com/Pixplicity/EasyPreferences/master/gradle-mvn-push.gradle'
